@@ -1,30 +1,54 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app" class="app-container">
+    <AppHeader  class="app-header"/>
+    <div class="app-content">
+      <router-view />
+    </div>
+    <AppFooter />
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+
+
+
+
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
+</script>
+
+<style scoped>
+.app-container {
+  font-family: 'Headland One', sans-serif;
+  background: linear-gradient(180deg, #75B96A 8.85%, rgba(178, 248, 214, 0.00) 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
-nav {
-  padding: 30px;
+.app-content{
+  flex-grow: 1;
+  height: 100%;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.app-header {
+  position: sticky ;
+  top: 0;
+  background-color: #75B96A; /* Colore di sfondo dell'header */
+  z-index: 9999;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
   }
 }
 </style>
