@@ -13,31 +13,31 @@
     <div class="card-row">
       <div class="card card-1">
         <h4 class="card-text">SALUTE</h4>
-        <a href="chi-siamo#salute" class="card-text-description">
+        <a class="card-text-description">
           La salute è fondamentale per la nostra selezione. Tutti i nostri cani sono ufficialmente testati per displasia (FSA/CELEMASCHE) e sottoposti a un ricco pannello di test genetici LABOKLIN. I risultati sono disponibili per i clienti.
         </a>
       </div>
       <div class="card card-2">
         <h4 class="card-text">CARATTERE</h4>
-        <a href="chi-siamo#carattere" class="card-text-description">
+        <a class="card-text-description">
           Il carattere del Labrador è distintivo. La sua innata volontà di compiacere, socievolezza ed attitudine al gioco lo rendono facilmente addestrabile per attività specifiche.
       </a>
       </div>
       <div class="card card-3">
         <h4 class="card-text">FUNZIONALITÀ</h4>
-        <a href="chi-siamo#funzionalita" class="card-text-description">
+        <a class="card-text-description">
           Il Labrador è funzionale, con struttura solida, coda adatta al nuoto e fiuto eccellente.
         </a>
       </div>
       <div class="card card-4">
         <h4 class="card-text">BELLEZZA</h4>
-        <a href="chi-siamo#bellezza" class="card-text-description">
+        <a class="card-text-description">
           La nostra selezione privilegia cani non eccessivamente pesanti, aderenti allo standard e con risultati visibili nelle foto.
         </a>
       </div>
     </div>
     <div class="center-link">
-        <a href="/chi-siamo#ethics" class="card-link">Scopri di più</a>
+        <router-link to="chi-siamo" class="card-link">Scopri di più</router-link>
       </div>
   </div>
 

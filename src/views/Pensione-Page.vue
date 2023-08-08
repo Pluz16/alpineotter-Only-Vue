@@ -1,5 +1,5 @@
-<template>
-    <div class="pensione-container" id="top">
+<template id="top">
+    <div class="pensione-container" >
       <h1 >Pensione e asilo diurno per cani</h1>
   <h2 class="pensione-title">Un Paradiso per i Vostri Amici a Quattro Zampe</h2>
   <div class="pensione-info">

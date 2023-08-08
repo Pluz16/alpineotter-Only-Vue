@@ -1,4 +1,4 @@
-<template>
+<template id="top">
     <div class="home-page">
       <FirstHero />
       <AppOwns />

@@ -104,6 +104,18 @@ export default {
     width: 100%;
   }
 
+  .left{
+    margin-left: 16px;
+  }
+
+  .right{
+    margin-right: 16px;
+  }
+
+  .left{
+    margin-left: 16px;
+  }
+
   .left,
   .right,
   .left h2,

@@ -4,7 +4,7 @@
         <h2>Contattaci</h2>
         <p>Indirizzo: Settimo Vittone (TO) Via Montiglie 18</p>
         <p>IVA: 12427530014</p>
-        <p>Tel: +39 3421032437</p>
+        <p>Telefono: <a href="tel:+393294295759">+39 3294205759</a></p>
         <p><a href="https://www.facebook.com/alpineotter">https://www.facebook.com/alpineotter</a></p>
 
         <p class="info">Per informazioni su Allevamento, cuccioli di Labrador e adulti:

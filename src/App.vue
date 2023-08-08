@@ -39,7 +39,6 @@ export default {
 }
 
 .app-header {
-  position: sticky ;
   top: 0;
   background-color: #75B96A; /* Colore di sfondo dell'header */
   z-index: 9999;

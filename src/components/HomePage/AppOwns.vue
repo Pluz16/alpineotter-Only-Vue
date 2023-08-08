@@ -4,7 +4,7 @@
     <div class="slider-container">
       <div class="row">
         <div v-for="dog in dogs" :key="dog.id" class="col-md-2 col-sm-4">
-          <a href="/allevamento#dog-list" class="dog-card">
+          <router-link to="/allevamento" class="dog-card">
             <div class="dog-image">
               <div class="circle-container">
                 <img :src="require(`@/assets/${dog.photo}`)" alt="Foto del cane" class="rounded-circle" />
@@ -14,7 +14,7 @@
               </div>
             </div>
             <h3 class="dog-name">{{ dog.name }}</h3>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
           <div class="accordion-body">
             <div class="row">
               <div v-for="dog in dogs" :key="dog.id" class="col-6">
-                <router-link to="/allevamento#dog-list" class="dog-card">
+                <router-link to="/allevamento" class="dog-card">
                   <div class="dog-image">
                     <div class="circle-container">
                       <img :src="require(`@/assets/${dog.photo}`)" alt="Foto del cane" class="rounded-circle" />
@@ -172,6 +172,13 @@ export default {
     color: #000;
   }
 
+  .app-owns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .slider-container {
     display: none;
   }
@@ -184,11 +191,12 @@ export default {
   
   .accordion {
     display: block;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    max-width: 300px;
   }
   
   .accordion-item {
-    margin-bottom: 20px;
+    color: #F0A6A6;
   }
   
   .accordion-body {
@@ -197,14 +205,14 @@ export default {
   }
   
   .accordion-button {
-    background-color: #F0A6A6;
+    background-color: #F0A6A6 !important;
     color: #000;
     border: none;
     border-radius: 0;
-    padding: 10px 15px;
     font-size: 18px;
     text-align: left;
     width: 100%;
+    
   }
   
   .accordion-button::after {

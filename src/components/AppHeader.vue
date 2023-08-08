@@ -7,28 +7,33 @@
       <h1>Megan &amp; Co.</h1>
     </div>
     <nav class="desktop-navbar">
-      <a href="/" class="nav-link">Home</a>
-      <a href="/allevamento#top" class="nav-link">Allevamento</a>
-      <a href="/pensione#top" class="nav-link">Pensione</a>
-      <a href="/chi-siamo#top" class="nav-link">Chi siamo</a>
-      <a href="/contattaci#top" class="nav-link">Contattaci</a>
+      <router-link to="/" class="nav-link">Home</router-link>
+      <router-link to="/allevamento" class="nav-link">Allevamento</router-link>
+      <router-link to="/pensione" class="nav-link">Pensione</router-link>
+      <router-link to="/chi-siamo" class="nav-link">Chi siamo</router-link>
+      <router-link to="/contattaci" class="nav-link">Contattaci</router-link>
     </nav>
     <div>
       <div class="accordion" id="headerAccordion">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#headerCollapse" :aria-expanded="isMenuOpen" aria-controls="headerCollapse" @click="toggleMenu" :class="{ 'collapsed': !isMenuOpen }">
+            <button class="accordion-button" type="button" @click="toggleMenu" :class="{ 'collapsed': !isMenuOpen }">
               {{ isMenuOpen ? 'Chiudi il Menù' : 'Apri il Menù' }}
             </button>
           </h2>
-          <div id="headerCollapse" class="accordion-collapse collapse" :class="{ 'show': isMenuOpen }" data-bs-parent="#headerAccordion">
+          <div
+            id="headerCollapse"
+            class="accordion-collapse collapse"
+            :class="{ 'show': isMenuOpen }"
+            data-bs-parent="#headerAccordion"
+          >
             <div class="accordion-body">
               <ul class="responsive-list">
-                <li><a href="/" class="list-link" :hash="top">Home</a></li>
-                <li> <a href="/allevamento#top" class="list-link">Allevamento</a></li>
-                <li><a href="/pensione#top" class="list-link" :hash="top">Pensione</a></li>
-                <li><a href="/chi-siamo#top" class="list-link" :hash="top">Chi siamo</a></li>
-                <li><a href="/contattaci#top" class="list-link" :hash="top">Contattaci</a></li>
+                <li><router-link to="/" class="list-link" exact>Home</router-link></li>
+                <li><router-link to="/allevamento" class="list-link">Allevamento</router-link></li>
+                <li><router-link to="/pensione" class="list-link">Pensione</router-link></li>
+                <li><router-link to="/chi-siamo" class="list-link">Chi siamo</router-link></li>
+                <li><router-link to="/contattaci" class="list-link">Contattaci</router-link></li>
               </ul>
             </div>
           </div>
@@ -40,13 +45,6 @@
 
 <script>
 export default {
-  name: 'AppHeader',
-  data() {
-    return {
-      isMenuOpen: false,
-      top: "top",
-    };
-  },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
@@ -54,11 +52,25 @@ export default {
     goToHomePage() {
       this.$router.push('/'); // Indirizzamento alla homepage
     },
+    scrollToTop() {
+      const element = document.getElementById("top");
+      if (element) {
+        // Utilizza lo scroll senza animazione
+        element.scrollIntoView();
+      }
+    },
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+      top: "top",
+    };
   },
 };
 </script>
 
 <style scoped>
+/* Stili condivisi */
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -83,6 +95,9 @@ export default {
 
 .accordion-item {
   background-color: #3FA273;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .accordion-button {
@@ -98,22 +113,35 @@ export default {
 .list-link:hover {
   color: #F0A6A6;
 }
+
 .desktop-navbar {
-  display: none; /* Nascondi la navbar nella vista desktop */
+  display: flex; /* Mostra la navbar nella vista desktop */
 }
 
+.responsive-list {
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-list li {
+  margin: 5px 0;
+}
+
+/* Stili per schermi con larghezza inferiore a 768px */
 @media (max-width: 767px) {
   .app-header {
-    align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
   }
-
-
 
   .accordion-body {
     margin-top: 10px;
+    padding: 0;
   }
-  .brand h1{
+
+  .brand h1 {
     font-size: medium;
   }
 
@@ -125,18 +153,23 @@ export default {
   .accordion-body li {
     margin: 5px 0;
   }
+
+
+
+  .desktop-navbar {
+    display: none; /* Nascondi la navbar nella vista desktop */
+  }
 }
 
+/* Stili per schermi con larghezza maggiore o uguale a 768px */
 @media (min-width: 768px) {
   .accordion {
     display: none; /* Nascondi l'accordion nella vista desktop */
   }
 
   .desktop-navbar {
-    display: flex; /* Mostra la navbar nella vista desktop */
     margin-left: auto;
   }
-
 
   .desktop-navbar .nav-link {
     margin-left: 15px; /* Aggiungi spazio tra i link nella navbar */

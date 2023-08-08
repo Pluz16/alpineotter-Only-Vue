@@ -3,14 +3,14 @@
     <div class="footer-left">
       <div class="useful-section">
         <div class="section-title">Sezioni utili</div>
-          <div class="useful-links router-link">
-    <!-- Aggiungi il metodo @click per gestire l'evento di click -->
-    <router-link @click="scrollToBreed" to="/allevamento#breed" class="router-link">Allevamento Labrador Retriever</router-link>
-    <router-link @click="scrollToPuppy" to="/allevamento#puppy" class="router-link">Cuccioli Labrador Retriever</router-link>
-    <router-link to="/pensione" class="router-link">Pensione e Villaggio Vacanze</router-link>
+        <div class="useful-links">
+          <!-- Utilizza i router-link senza l'uso del metodo @click -->
+          <router-link to="/allevamento#breed" class="router-link">Allevamento Labrador Retriever</router-link>
+          <router-link to="/allevamento#puppy" class="router-link">Cuccioli Labrador Retriever</router-link>
+          <router-link to="/pensione" class="router-link">Pensione e Villaggio Vacanze</router-link>
         </div>
       </div>
-      <div class="horizontal-links ">
+      <div class="horizontal-links">
         <router-link to="/blog" class="router-link">BLOG</router-link>
         <router-link to="/pensione" class="router-link">Servizi</router-link>
         <router-link to="/chi-siamo" class="router-link">Etica</router-link>
@@ -22,10 +22,11 @@
       <p class="footer-info">
         Indirizzo: Settimo Vittone (TO) Via Montiglie 18<br />
         IVA: 12427530014<br />
-        Tel: +39 3421032437<br />
+        Tel: <a href="tel:+393294205759">+39 3294205759</a><br />
         <a href="https://www.facebook.com/alpineotter">https://www.facebook.com/alpineotter</a>
       </p>
-      <router-link to="/cookies" class="router-link">Cookies</router-link><router-link to="/privacy" class="router-link">Privacy</router-link>
+      <router-link to="/cookies" class="router-link">Cookies</router-link>
+      <router-link to="/privacy" class="router-link">Privacy</router-link>
     </div>
     <div class="footer-right">
       <img src="../assets/enci.png" alt="ENCI" class="sponsor-image" />
@@ -63,6 +64,7 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
 
 
 <style scoped>
+/* Stili condivisi */
 .app-footer {
   color: #000;
   font-family: HeadlandOne;
@@ -76,78 +78,46 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
   text-align: center;
 }
 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-
-}
-
-.useful-section {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-}
-
 .section-title {
-  color: #000;
   font-size: 32px;
-  /* margin-bottom: 20px; */
 }
 
 .useful-links {
-  color: #000; 
-  font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.router-link {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .horizontal-links {
   display: flex;
-  color: #000;
   font-size: 24px;
   justify-content: space-between;
-  margin-top: 40px;
   gap: 10px;
-}
-
-
-.footer-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .company-title {
-  color: #000;
   font-size: 32px;
   margin-bottom: 10px;
 }
 
 .owner-name {
-  color: #000;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .footer-info {
-  color: #000;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .footer-info a {
-  color: #000 !important; 
-}
-
-.footer-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #000 !important;
 }
 
 .sponsor-image {
@@ -155,28 +125,19 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
   height: auto;
   border-radius: 25px;
   margin-bottom: 10px;
-
 }
 
-.router-link {
-  color: rgb(0, 0, 0);
-}
-
-
-
-
+/* Stili per schermi con larghezza maggiore o uguale a 768px */
 @media (min-width: 768px) {
   .app-footer {
     flex-direction: row;
-    height: auto;
-    align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
+    align-items: flex-start;
   }
 
   .footer-left {
     align-items: flex-start;
-    margin-bottom: 0;
   }
 
   .useful-section {
@@ -190,7 +151,6 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
 
   .useful-links {
     font-size: 16px;
-    /* flex-direction: row; */
     align-items: flex-start;
   }
 
@@ -219,7 +179,6 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
   }
 
   .footer-right {
-    justify-content: center;
     gap: 10px;
   }
 
@@ -230,20 +189,18 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
   }
 }
 
-@media (max-width: 768px) {
-
-  .app-footer{
-    display: flex;
-    flex-direction: row;
+/* Stili per schermi con larghezza inferiore a 768px */
+@media (max-width: 767px) {
+  .app-footer {
     max-width: 100%;
-    justify-content: space-between;
     align-items: center;
   }
+
   .section-title {
     font-size: 24px;
   }
 
-  .useful-links {
+  .router-link {
     font-size: 16px;
   }
 
@@ -266,34 +223,5 @@ In questo modo, quando clicchi sui link "Allevamento Labrador Retriever" e "Cucc
   .sponsor-image {
     display: none;
   }
-}
-
-/* Stili per schermi di dimensioni superiori a 768px */
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
-
-  .useful-links {
-    font-size: 20px;
-  }
-
-  .horizontal-links {
-    font-size: 24px;
-  }
-
-  .company-title {
-    font-size: 32px;
-  }
-
-  .owner-name {
-    font-size: 20px;
-  }
-
-  .footer-info {
-    font-size: 20px;
-  }
-
-  
 }
 </style>
