@@ -13,18 +13,27 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomePage,
+    meta : {
+      title: 'Megan & Co'
+    }
   },
 
   {
     path: '/allevamento',
     name: 'Allevamento',
     component: Allevamento,
+    meta : {
+      title: 'Allevamento Labrador Retrievers'
+    }
   },
 
   {
     path: '/pensione',
     exact: true,
     component: Pensione, // Usa il componente "Pensione" per questa rotta
+    meta : {
+      title: 'Pensione per cani'
+    }
   },
   
 
@@ -33,12 +42,18 @@ const routes = [
     path: '/contattaci',
     name: 'Contattaci',
     component: ContattaciPage,
+    meta : {
+      title: 'Contatti'
+    }
   },
 
   {
     path: '/chi-siamo',
     name: 'Chi siamo',
     component: AboutUs,
+    meta : {
+      title: 'About us'
+    }
   },
 
   { path: '/chi-siamo#ethics-section', 
@@ -48,11 +63,17 @@ const routes = [
     path: '/cookies',
     name: 'Cookie Policy',
     component: Cookie,
+    meta : {
+      title: 'Cookie Policy'
+    }
   },
   {
     path: '/privacy',
     name: 'Privacy Policy',
     component: Privacy,
+    meta : {
+      title: 'Privacy Policy'
+    }
   },
 
   
@@ -63,6 +84,11 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next();
 });
 
 export default router;

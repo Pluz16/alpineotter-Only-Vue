@@ -32,6 +32,8 @@ export default {
 .first-hero {
   position: relative;
   height: 400px;
+  max-width: 100%;
+  margin: 0 auto; /* Aggiunto per centrare il contenuto */
 }
 
 .background-image {
@@ -52,6 +54,7 @@ export default {
   align-items: center;
   height: 100%;
   z-index: 1;
+  max-width: 100%;
 }
 
 .text {
@@ -60,13 +63,14 @@ export default {
   align-items: center;
   color: white;
   margin-top: 20px;
+  padding: 0 10px; /* Aggiungi questa riga */
 }
 
 .left,
 .right {
   cursor: pointer;
   padding: 10px 20px;
-  width: 360px;
+  /* max-width: 360px; */
   height: 100px;
   display: flex;
   justify-content: center;
@@ -101,26 +105,23 @@ export default {
 @media (max-width: 767px) {
   .left,
   .right {
-    width: 100%;
+    max-width: 100%;
   }
 
-  .left{
-    margin-left: 16px;
-  }
 
   .right{
-    margin-right: 16px;
+    margin-right: 10px;
   }
 
   .left{
-    margin-left: 16px;
+    margin-left: 10px;
   }
 
   .left,
   .right,
   .left h2,
   .right h2 {
-    font-size: 18px;
+    font-size: 1rem;
   }
 }
 

@@ -1,6 +1,7 @@
 <template id="top">
     <div class="home-page">
       <FirstHero />
+      <AppParadise />
       <AppOwns />
       <AppReception />
       <AppEtica />
@@ -12,16 +13,19 @@
   
   <script>
   import FirstHero from '@/components/HomePage/FirstHero.vue';
+  import AppParadise from '@/components/HomePage/AppParadise';
   import AppOwns from '@/components/HomePage/AppOwns.vue';
   import AppReception from '@/components/HomePage/AppReception.vue';
   import AppEtica from '@/components/HomePage/AppEtica.vue';
   import AppSlider from '@/components/HomePage/AppSlider.vue';
   import AppLab from '@/components/HomePage/AppLab.vue';
   
+  
   export default {
     name: 'HomePage',
     components: {
       FirstHero,
+      AppParadise,
       AppOwns,
       AppReception,
       AppSlider,

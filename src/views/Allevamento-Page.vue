@@ -710,17 +710,21 @@ background-image: none;
 
 
 /* START DOG SECTION */
+.dog-list-section {
+  max-width: 100%;
+  overflow: hidden; /* Aggiungi questa riga */
+}
 
 .dog-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Mostra 2 cani per riga in mobile */
+  grid-template-columns: repeat(1, 1fr); /* Mostra 1 cane per riga */
   gap: 20px; /* Spazi tra i cani */
 }
 
 @media (min-width: 768px) {
   /* Layout per desktop */
   .dog-list {
-    grid-template-columns: repeat(3, 1fr); /* Mostra 3 cani per riga in desktop */
+    grid-template-columns: repeat(2, 1fr); /* Mostra 3 cani per riga in desktop */
   }
 }
 

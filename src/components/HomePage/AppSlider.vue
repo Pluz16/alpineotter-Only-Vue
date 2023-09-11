@@ -8,6 +8,9 @@
     <div class="carousel-item" data-bs-interval="2000">
       <img src="@/assets/Ulisse5.jpg" class="d-block w-100" alt="Ulisse">
     </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="@/assets/Mira_water.jpg" class="d-block w-100" alt="Ulisse">
+    </div>
     <div class="carousel-item">
       <img src="@/assets/work23.jpg" class="d-block w-100" alt="Work">
     </div>
