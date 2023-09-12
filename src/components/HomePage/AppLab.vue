@@ -18,8 +18,8 @@
       e la volontà di compiacere non lo rendono un buon guardiano.
     </p>
     <div class="container-img">
-      <img src="@/assets/history.jpg" alt="Labrador Immagine 1" class="labrador-image" />
-      <img src="@/assets/terranovamap.jpg" alt="Labrador Immagine 2" class="terranova-image" />
+      <img src="@/assets/history.jpg" alt="Storia del Labrador Retriever Inghilterra lontra" class="labrador-image" />
+      <img src="@/assets/terranovamap.jpg" alt="Origini del Labrador retriever Terranova Canada riporto" class="terranova-image" />
     </div>
   </div>
 </template>

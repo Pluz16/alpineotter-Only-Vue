@@ -2,6 +2,7 @@
     <div class="home-page">
       <FirstHero />
       <AppParadise />
+      <AppNews/>
       <AppOwns />
       <AppReception />
       <AppEtica />
@@ -14,6 +15,7 @@
   <script>
   import FirstHero from '@/components/HomePage/FirstHero.vue';
   import AppParadise from '@/components/HomePage/AppParadise';
+  import AppNews from '@/components/HomePage/AppNews.vue';
   import AppOwns from '@/components/HomePage/AppOwns.vue';
   import AppReception from '@/components/HomePage/AppReception.vue';
   import AppEtica from '@/components/HomePage/AppEtica.vue';
@@ -25,6 +27,7 @@
     name: 'HomePage',
     components: {
       FirstHero,
+      AppNews,
       AppParadise,
       AppOwns,
       AppReception,

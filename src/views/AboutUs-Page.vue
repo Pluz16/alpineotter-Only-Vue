@@ -29,13 +29,13 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/logodef.jpg" class="d-block w-100" alt="...">
+          <img src="@/assets/logodef.jpg" class="d-block w-100" alt="Allevamento Labrador Retrievers alta genealogia con pedigree">
         </div>
         <div class="carousel-item">
-          <img src="@/assets/expo.jpg" class="d-block w-100" alt="...">
+          <img src="@/assets/expo.jpg" class="d-block w-100" alt="Expo canine di bellezza esposizioni cinofile ENCI">
         </div>
         <div class="carousel-item">
-          <img src="@/assets/CARAMBA.jpg" class="d-block w-100" alt="...">
+          <img src="@/assets/CARAMBA.jpg" class="d-block w-100" alt="Arma dei carabinieri cinofilia unità cinofila">
         </div>
       </div>
     </div>

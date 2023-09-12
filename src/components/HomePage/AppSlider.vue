@@ -3,22 +3,22 @@
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="@/assets/cucciolopeluche.jpg" class="d-block w-100" alt="...">
+      <img src="@/assets/cucciolopeluche.jpg" class="d-block w-100" alt="Cucciolo labrador con peluche">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="@/assets/Ulisse5.jpg" class="d-block w-100" alt="Ulisse">
+      <img src="@/assets/Ulisse5.jpg" class="d-block w-100" alt="Labrador Chocolate marrone Maschio">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="@/assets/Mira_water.jpg" class="d-block w-100" alt="Ulisse">
+      <img src="@/assets/Mira_water.jpg" class="d-block w-100" alt="Labrador retriever black water">
     </div>
     <div class="carousel-item">
-      <img src="@/assets/work23.jpg" class="d-block w-100" alt="Work">
+      <img src="@/assets/work23.jpg" class="d-block w-100" alt="Giochi per cani riporto educazione cinofila ">
     </div>
     <div class="carousel-item">
-      <img src="@/assets/Love.jpg" class="d-block w-100" alt="Work">
+      <img src="@/assets/Love.jpg" class="d-block w-100" alt="Labrador giallo e labrador nero che giocano nella neve, Black and Yellow Lab palying in the snow">
     </div>
     <div class="carousel-item">
-      <img src="@/assets/Magda.jpg" class="d-block w-100" alt="Work">
+      <img src="@/assets/Magda.jpg" class="d-block w-100" alt="Cucciolo di Labrador chocolate che gioca">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

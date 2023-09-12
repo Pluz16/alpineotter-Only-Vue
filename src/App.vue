@@ -11,6 +11,8 @@
 <script>
 import AppHeader from '@/components/AppHeader.vue';
 import AppFooter from '@/components/AppFooter.vue';
+import { useHead } from '@vueuse/head';
+import { computed, reactive } from 'vue';
 
 
 
@@ -20,6 +22,21 @@ export default {
   components: {
     AppHeader,
     AppFooter,
+  },
+  setup(){
+    const siteData = reactive ({
+      title: 'Pensione Megan & Co e Allevamento Alpine otter',
+      description: 'Allevamento di Labrador Retrievers, vendita cuccioli Labrador e pensione canina. Situato in piemonte al confine con la Valle &#39 Aosta, vicino a Lombardia e Liguria',
+    })
+    useHead({
+      title: computed(() => siteData.title),
+      meta: [
+        {
+          name: 'description',
+          content: computed(() => siteData.description),
+        },
+      ],
+    })
   },
 };
 </script>

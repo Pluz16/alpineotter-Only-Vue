@@ -57,7 +57,7 @@
     <h2 class="section-title">I cuccioli</h2>
     <div class="puppy-grid">
       <div class="puppy-item">
-        <img src="@/assets/cucciolo.jpg" alt="Cucciolo 1">
+        <img src="@/assets/cucciolo.jpg" alt="Vendita cucciolo di labrador chocolate beige nero black allevamento">
         <h3>Raggiungono le nuove famiglie dopo i 60 giorni di vita</h3>
         <p>
           Il periodo esatto viene concordato coi nuovi proprietari e valutato in base alla nostra esperienza.
@@ -67,7 +67,7 @@
         </p>
       </div>
       <div class="puppy-item">
-        <img src="@/assets/cucciolopeluche.jpg" alt="Cucciolo 2">
+        <img src="@/assets/cucciolopeluche.jpg" alt="Pedigree cucciolo Labrador ENCI di allevamento">
         <h3>Pedigree e documenti</h3>
         <p>
           La pratica per il pedigree è già stata avviata e il documento ENCI verrà consegnato al nuovo intestatario
@@ -79,7 +79,7 @@
         </p>
       </div>
       <div class="puppy-item">
-        <img src="@/assets/andre_puppy.jpg" alt="Cucciolo 3">
+        <img src="@/assets/andre_puppy.jpg" alt="Cucciolo di cane Labrador che gioca con bambino">
         <h3>Prima socializzazione e monitoraggio</h3>
         <p>
           Durante la sua permanenza presso di noi, dalla nascita alla consegna, viene effettuato attento monitoraggio
@@ -91,7 +91,7 @@
         </p>
       </div>
       <div class="puppy-item">
-        <img src="@/assets/webbina.jpg" alt="Cucciolo 4">
+        <img src="@/assets/webbina.jpg" alt="Labrador giallo con pedigree no displasia">
         <h3>Supporto a vita</h3>
         <p>
           Siamo a disposizione PER TUTTA LA VITA DEL CANE per consigli e supporto.
@@ -114,7 +114,7 @@
       <h2 class="section-title">I nostri cani</h2>
       <div class="dog-list">
         <div class="dog-item">
-          <img src="@/assets/Mira_head.jpg" alt="MIRA">
+          <img src="@/assets/Mira_head.jpg" alt="MIRA femmina Labrador Black nero di razza">
           <h3>MIRA - LO16160431</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -122,7 +122,7 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/Megan_young.jpg" alt="MEGAN">
+          <img src="@/assets/Megan_young.jpg" alt="MEGAN femmina Labrador Black nero di razza">
           <h3>MEGAN - LO14150633</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -130,7 +130,7 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/Expo_Cuba_Head.jpg" alt="KARNISCHE ALPEN NESTELLA">
+          <img src="@/assets/Expo_Cuba_Head.jpg" alt="KARNISCHE ALPEN NESTELLA femmina Labrador Chocolate Marrone di razza">
           <h3>KARNISCHE ALPEN NESTELLA - LO17147585</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -138,7 +138,7 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/Webby_head.jpg" alt="DAENERYS TARGARYEN ALPINE OTTER">
+          <img src="@/assets/Webby_head.jpg" alt="DAENERYS TARGARYEN ALPINE OTTER femmina Labrador Miele con pedigree testato patologie genetiche">
           <h3>DAENERYS TARGARYEN ALPINE OTTER - LO20147494</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -146,7 +146,7 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/Magda_head.jpg" alt="MAGDA ALPINE OTTER">
+          <img src="@/assets/Magda_head.jpg" alt="MAGDA ALPINE OTTER femmina Labrador Chocolate Marrone di razza ">
           <h3>MAGDA ALPINE OTTER - LO2239349</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -154,12 +154,12 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/webbina.jpg" alt="MARGE BOUVIER ALPINE OTTER">
+          <img src="@/assets/webbina.jpg" alt="MARGE BOUVIER ALPINE OTTER femmina Labrador Miele con pedigree testato patologie genetiche">
           <h3>MARGE BOUVIER ALPINE OTTER - LO22200609</h3>
           <p>Test da effettuare al raggiungimento dell'età necessaria per sottoporsi all'analisi</p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/Ulisse3.jpg" alt="ULISSE">
+          <img src="@/assets/Ulisse3.jpg" alt="ULISSE maschio Labrador Chocolate marrone con Pedigree stallone">
           <h3>AHSEH DWAYNE RICARDO ONFROY ALPINE OTTER - LO21186107</h3>
           <p>Displasia Anche e Gomiti: A/0
             Testato LABOKLIN per 7 patologie
@@ -182,7 +182,7 @@
         </p>
       </div>
       <div class="image-content">
-        <img src="@/assets/ethical_breeding.jpg" alt="Allevamento etico">
+        <img src="@/assets/ethical_breeding.jpg" alt="Allevamento Labrador Alpine Otter Piemonte Valle d'Aosta Lombardia Liguria">
       </div>
     </div>
   </section>

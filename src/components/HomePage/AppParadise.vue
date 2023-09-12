@@ -1,6 +1,7 @@
 <template>
     <div class="paradise-container">
-      <h3 class="paradise-title">Un Paradiso per gli Amici a Quattro Zampe!</h3>
+      <h4 class="paradise-title">Allevamento Labrador Retrievers e Pensione per cani</h4>
+      <p></p>
     </div>
   </template>
   
@@ -9,7 +10,7 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
   }
   
   .paradise-title {

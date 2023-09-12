@@ -5,7 +5,7 @@
 La nostra posizione privilegiata, vicina ai centri abitati, vi offre un'esperienza unica e rilassante per il vostro cane.
 </p>
     <router-link to="/pensione#contact" class="btn"><h3>Vienici a Trovare</h3></router-link>
-      <img src="@/assets/struttura.jpg" alt="Immagine reception" class="reception-image" />
+      <img src="@/assets/struttura.jpg" alt="Pensione per cani e asilo diurno piemonte Valle d'Aosta" class="reception-image" />
     </div>
   </template>
   

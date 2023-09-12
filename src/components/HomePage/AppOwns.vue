@@ -7,7 +7,7 @@
           <router-link to="/allevamento" class="dog-card">
             <div class="dog-image">
               <div class="circle-container">
-                <img :src="require(`@/assets/${dog.photo}`)" alt="Foto del cane" class="rounded-circle" />
+                <img :src="require(`@/assets/${dog.photo}`)" alt="Allevamento Labrador di razza Piemonte Valle d'Aosta" class="rounded-circle" />
               </div>
               <div class="overlay">
                 <span class="overlay-text">Scopri di più</span>
@@ -34,7 +34,7 @@
                 <router-link to="/allevamento" class="dog-card">
                   <div class="dog-image">
                     <div class="circle-container">
-                      <img :src="require(`@/assets/${dog.photo}`)" alt="Foto del cane" class="rounded-circle" />
+                      <img :src="require(`@/assets/${dog.photo}`)" alt="Labrador di razza con pedigree" class="rounded-circle" />
                     </div>
                     <div class="overlay">
                       <span class="overlay-text">Scopri di più</span>
