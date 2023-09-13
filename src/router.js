@@ -13,7 +13,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomePage,
-    meta : {
+    meta: {
       title: 'Megan & Co'
     }
   },
@@ -22,7 +22,7 @@ const routes = [
     path: '/allevamento',
     name: 'Allevamento',
     component: Allevamento,
-    meta : {
+    meta: {
       title: 'Allevamento Labrador Retrievers'
     }
   },
@@ -30,19 +30,17 @@ const routes = [
   {
     path: '/pensione',
     exact: true,
-    component: Pensione, // Usa il componente "Pensione" per questa rotta
-    meta : {
+    component: Pensione,
+    meta: {
       title: 'Pensione per cani'
     }
   },
-  
-
 
   {
     path: '/contattaci',
     name: 'Contattaci',
     component: ContattaciPage,
-    meta : {
+    meta: {
       title: 'Contatti'
     }
   },
@@ -51,19 +49,19 @@ const routes = [
     path: '/chi-siamo',
     name: 'Chi siamo',
     component: AboutUs,
-    meta : {
+    meta: {
       title: 'About us'
     }
   },
 
   { path: '/chi-siamo#ethics-section', 
-  component: AboutUs },
+    component: AboutUs },
 
   {
     path: '/cookies',
     name: 'Cookie Policy',
     component: Cookie,
-    meta : {
+    meta: {
       title: 'Cookie Policy'
     }
   },
@@ -71,14 +69,10 @@ const routes = [
     path: '/privacy',
     name: 'Privacy Policy',
     component: Privacy,
-    meta : {
+    meta: {
       title: 'Privacy Policy'
     }
   },
-
-  
-
-
 ];
 
 const router = createRouter({
@@ -86,9 +80,8 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
+router.afterEach((to) => {
   document.title = to.meta.title;
-  next();
 });
 
 export default router;
