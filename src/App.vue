@@ -14,9 +14,6 @@ import AppFooter from '@/components/AppFooter.vue';
 import { useHead } from '@vueuse/head';
 import { computed, reactive } from 'vue';
 
-
-
-
 export default {
   name: 'App',
   components: {
@@ -24,9 +21,9 @@ export default {
     AppFooter,
   },
   setup(){
-    const siteData = reactive ({
-      title: 'Pensione Megan & Co e Allevamento Alpine otter',
-      description: 'Allevamento di Labrador Retrievers, vendita cuccioli Labrador e pensione canina. Situato in piemonte al confine con la Valle &#39 Aosta, vicino a Lombardia e Liguria',
+    const siteData = reactive({
+      title: 'Pensione Megan & Co e Allevamento Labrador Alpine otter',
+      description: 'Allevamento di Labrador Retrievers, vendita cuccioli Labrador e pensione canina. Situato in Piemonte al confine con la Valle &#39 Aosta, vicino a Lombardia e Liguria',
     })
     useHead({
       title: computed(() => siteData.title),
@@ -37,6 +34,20 @@ export default {
         },
       ],
     })
+
+    // Aggiungi il markup schema JSON-LD per il logo
+    const logoSchema = {
+      "@context": "http://schema.org",
+      "@type": "Website",
+      "name": "Allevamento Labrador Alpine otter e Pensione per cani",
+      "url": "https://www.alpineotter.com",
+      "logo": "https://www.alpineotter.com/img/logodef.ad62acbc.jpg"
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(logoSchema);
+    document.head.appendChild(script);
   },
 };
 </script>
