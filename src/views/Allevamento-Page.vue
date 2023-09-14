@@ -7,41 +7,62 @@
  
 </section>
 
-<section class="card-section">
-  <div class="container">
-    <h2 class="section-title">I nostri principi</h2>
-    <div class="card-row">
-      <div class="card card-1">
-        <h4 class="card-text">SALUTE</h4>
-        <a class="card-text-description">
-          La salute è fondamentale per la nostra selezione. Tutti i nostri cani sono ufficialmente testati per displasia (FSA/CELEMASCHE) e sottoposti a un ricco pannello di test genetici LABOKLIN. I risultati sono disponibili per i clienti.
-        </a>
-      </div>
-      <div class="card card-2">
-        <h4 class="card-text">CARATTERE</h4>
-        <a class="card-text-description">
-          Il carattere del Labrador è distintivo. La sua innata volontà di compiacere, socievolezza ed attitudine al gioco lo rendono facilmente addestrabile per attività specifiche.
-      </a>
-      </div>
-      <div class="card card-3">
-        <h4 class="card-text">FUNZIONALITÀ</h4>
-        <a class="card-text-description">
-          Il Labrador è funzionale, con struttura solida, coda adatta al nuoto e fiuto eccellente.
-        </a>
-      </div>
-      <div class="card card-4">
-        <h4 class="card-text">BELLEZZA</h4>
-        <a class="card-text-description">
-          La nostra selezione privilegia cani non eccessivamente pesanti, aderenti allo standard e con risultati visibili nelle foto.
-        </a>
+<section class="carosello">
+
+  <div id="carouselExampleCaptions" class="carousel slide card" data-bs-ride="carousel" data-bs-interval="5000"> <!-- Intervallo di 5 secondi -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="@/assets/PUPPY-1.jpg" class="d-block w-100" alt="CUCCIOLI DI LABRADOR PIEMONTE GIALLI">
+      <div class="carousel-caption ">
+        <h2>SALUTE</h2>
+        <p>La salute è fondamentale per la nostra selezione. Tutti i nostri cani sono ufficialmente testati per displasia (FSA/CELEMASCHE) e sottoposti a un ricco pannello di test genetici LABOKLIN. I risultati sono disponibili per i clienti.</p>
       </div>
     </div>
-    <div class="center-link">
-        <router-link to="chi-siamo" class="card-link">Scopri di più</router-link>
+    <div class="carousel-item ">
+      <img src="@/assets/PuppyWebby_head.jpg" class="d-block w-100" alt="LABRADOR CUCCIOLO BEIGE GIALLO MIELE">
+      <div class="carousel-caption ">
+        <h2>CARATTERE</h2>
+        <p>Il carattere del Labrador è distintivo. La sua innata volontà di compiacere, socievolezza ed attitudine al gioco lo rendono facilmente addestrabile per attività specifiche.</p>
       </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="@/assets/Ulisse5.jpg" class="d-block w-100" alt="LABRADOR CHOCOLATE MASCHIO CIOCCOLATO">
+      <div class="carousel-caption">
+        <h2>FUNZIONALITÀ</h2>
+        <p>Il Labrador è funzionale, con struttura solida, coda adatta al nuoto e fiuto eccellente.</p>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="@/assets/Expo_Cuba_Head.jpg" class="d-block w-100" alt="ESPOSIZIONE CANINA LABRADOR CHOCOLATE FEMMINA CIOCCOLATO PIEMONTE">
+      <div class="carousel-caption ">
+        <h2>BELLEZZA</h2>
+        <p>La nostra selezione privilegia cani non eccessivamente pesanti, aderenti allo standard e con risultati visibili nelle foto.</p>
+      </div>
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Indietro</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Avanti</span>
+    </button>
+</div>
+
+<div class="center-link">
+        <router-link to="chi-siamo" class="card-link"><h2>Scopri la nostra etica</h2></router-link>
+      </div>
 
 </section>
+
+
 
 <section class="intro-section">
   <div class="container">
@@ -187,10 +208,6 @@
     </div>
   </section>
 
-
-
-
-
 </template>
 
 <script>
@@ -249,134 +266,46 @@ background-image: none;
 /* END- HEADER */
 
 /* CAROUSEL */
-
-.card-section{
-
-  margin-bottom: 16px;
+.carosello {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Per distribuire le card uniformemente su una riga */
-}
-
-.card-text {
-  font-size: 1.5rem; /* Imposta una dimensione del font base */
-  text-align: center;
-  font-weight: bold;
-  z-index: 1;
-  white-space: nowrap; /* Impedisce al testo di andare a capo */
-  overflow: hidden; /* Nasconde eventuali testi che superano la larghezza della card */
-  text-overflow: ellipsis; /* Aggiunge puntini di sospensione quando il testo è nascosto */
-}
-
-.section-title {
-  font-size: 1,5rem; /* Il testo avrà il 4% della larghezza del viewport come dimensione del font */
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.card-row {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-
-.card-row {
-  position: relative; /* Aggiungi questa proprietà per consentire il posizionamento assoluto della descrizione */
-}
-.card {
-  flex: 0 0 24%; /* Ogni card occupa il 24% della larghezza su schermi con larghezza massima di 1200px */
-  height: 200px;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  align-items: center;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-
-
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.card:hover h4{
-  display: none;
-}
-
-.card:hover p{
+.card {
   display: flex;
-  background-color: rgba(240, 248, 255, 0.574);
-}
-
-
-
-.card-text-description:hover{
-  display: flex;
-}
-
-
-.card-text-description {
-  /* Resto dello stile per la descrizione */
-  display: none;
-  font-size: 11px;
+  flex-direction: column; 
+  justify-content: center;
+  /* max-height: 350px; */
+  max-width: 800px;
+  border-radius: 10px;
   text-align: center;
-  color: #000000;
-  font-weight: 900;
-  position: absolute;
-  top: 50%; /* Posiziona il paragrafo al centro della card */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%; /* Imposta la larghezza della descrizione al 100% del container */
-  background-color: rgba(240, 248, 255, 0.574);
-  padding: 10px;
-  border-radius: 5px;
-  white-space: normal; /* Permette al testo di andare a capo */
+  overflow: auto; /* Aggiunta per gestire testo lungo */
+  margin: 20px; 
 }
 
-.card:hover .card-text {
-  display: none; /* Nascondi il testo della card al passaggio del mouse */
+.carousel-caption{
+  
+  overflow: auto;
+background-color: #333333a4;
 }
 
-.card:hover .card-text-description {
-  display: flex; /* Mostra il paragrafo al passaggio del mouse */
-  position: absolute;
-  top: 50%; /* Posiziona il paragrafo al centro della card */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(240, 248, 255, 0.574);
-  padding: 10px;
-  border-radius: 5px;
-  padding: 10 10 10 10;
+@media (max-width: 768px) {
+  /* Per schermi più piccoli, rimpicciolisci il testo */
+  .carousel-caption {
+    font-size: 12px;
+  }
 }
 
-.card-row {
-  position: relative; /* Aggiungi questa proprietà per consentire il posizionamento assoluto della descrizione */
-}
+
+
+
 
 .center-link {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Aggiungi uno spazio tra le card e il link */
+  margin-bottom: 20px;
 }
 
 .center-link a {
@@ -384,106 +313,8 @@ background-image: none;
   font-weight: 800;
 }
 
-.card-1 {
-  background-image: url('@/assets/cucciolo.jpg');
-}
-
-.card-2 {
-  background-image: url('@/assets/PuppyWebby_head.jpg');
-}
-
-.card-3 {
-  background-image: url('@/assets/history.jpg');
-}
-
-.card-4 {
-  background-image: url('@/assets/Expo_Cuba_Head.jpg');
-}
-
-@media (max-width: 950px) {
-
-  .card {
-    max-width: 250px; /* Riduci la larghezza massima della card su schermi più piccoli */
-    height: 180px; /* Riduci l'altezza della card su schermi più piccoli */
-  }
-
-
-  .card-text-description {
-  /* Resto dello stile per la descrizione */
-  display: none;
-  font-size: 7px;
-  text-align: center;
-  color: #000000;
-  font-weight: 750;
-  position: absolute;
-  top: 50%; /* Posiziona il paragrafo al centro della card */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%; /* Imposta la larghezza della descrizione al 100% del container */
-  max-height: 100%;
-  background-color: rgba(240, 248, 255, 0.574);
-  padding: 10px;
-  border-radius: 5px;
-  white-space: normal; /* Permette al testo di andare a capo */
-}
-
-
-  .card-text {
-    font-size: 15px; /* Riduci la dimensione del font su schermi più piccoli */
-  }
-
-
-  .card:hover {
-    transform: none; /* Annulla la trasformazione al passaggio del mouse */
-    box-shadow: none; /* Annulla l'ombra al passaggio del mouse */
-    pointer-events: none; /* Impedisce l'interazione con la card al passaggio del mouse */
-  }
-  
-  .card-text:hover,
-  .card-text-description:hover {
-    display: none; /* Annulla l'effetto di hover sugli elementi con classe .card-text e .card-text-description */
-  }
-}
-
-@media (max-width: 576px) {
-  .card {
-    flex: 0 0 calc(48%); /* Calcola la larghezza per ospitare due elementi per riga con uno spazio tra di essi */
-    height: 205px; /* Riduci ulteriormente l'altezza della card su schermi ancora più piccoli */
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    margin-bottom: 15px;
-  }
-
-  .card-row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card h4{
-    font-size: small;
-    display: flex;
-    font-weight: 900;
-  }
-
-  .card:hover .card-text-description{
-    display: none;
-  }
-
-  .card:hover {
-    transform: none; /* Annulla la trasformazione al passaggio del mouse */
-    box-shadow: none; /* Annulla l'ombra al passaggio del mouse */
-    pointer-events: none; /* Impedisce l'interazione con la card al passaggio del mouse */
-  }
-  
-  .card-text:hover,
-  .card-text-description:hover {
-    display: none; /* Annulla l'effetto di hover sugli elementi con classe .card-text e .card-text-description */
-  }
-
-
-
-
-
+.center-link h2 {
+  font-size: 18px;
 }
 
 
