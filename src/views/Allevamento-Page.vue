@@ -211,8 +211,17 @@
 </template>
 
 <script>
-
-
+export default {
+  mounted() {
+    if (this.$route.hash === '#doglist') {
+      const element = document.getElementById('doglist');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  },
+  // ...
+}
 
 </script>
 
@@ -220,7 +229,7 @@
 
 /* HEADER */
 .header-section {
-  padding: 40px 0;
+  padding: 20px 0;
   /* background-image: url(@/assets/mountains.png); */
   display: flex;
   justify-content: center;
@@ -286,15 +295,19 @@ background-image: none;
 }
 
 .carousel-caption{
-  
   overflow: auto;
 background-color: #333333a4;
 }
 
 @media (max-width: 768px) {
   /* Per schermi più piccoli, rimpicciolisci il testo */
-  .carousel-caption {
-    font-size: 12px;
+
+  .carousel-caption p{
+    display: none;
+  }
+
+  .carousel-caption h2{
+    font-size: medium;
   }
 }
 

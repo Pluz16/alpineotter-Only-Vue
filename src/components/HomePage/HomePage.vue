@@ -3,7 +3,7 @@
       <FirstHero />
       <AppParadise />
       <AppNews/>
-      <AppOwns />
+      <!-- <AppOwns /> -->
       <AppReception />
       <AppEtica />
       <AppSlider />
@@ -16,7 +16,7 @@
   import FirstHero from '@/components/HomePage/FirstHero.vue';
   import AppParadise from '@/components/HomePage/AppParadise';
   import AppNews from '@/components/HomePage/AppNews.vue';
-  import AppOwns from '@/components/HomePage/AppOwns.vue';
+  // import AppOwns from '@/components/HomePage/AppOwns.vue';
   import AppReception from '@/components/HomePage/AppReception.vue';
   import AppEtica from '@/components/HomePage/AppEtica.vue';
   import AppSlider from '@/components/HomePage/AppSlider.vue';
@@ -29,7 +29,7 @@
       FirstHero,
       AppNews,
       AppParadise,
-      AppOwns,
+      // AppOwns,
       AppReception,
       AppSlider,
       AppEtica,

@@ -4,7 +4,7 @@
     <div class="slider-container">
       <div class="row">
         <div v-for="dog in dogs" :key="dog.id" class="col-md-2 col-sm-4">
-          <router-link to="/allevamento" class="dog-card">
+          <router-link to="/allevamento#dog-list" class="dog-card">
             <div class="dog-image">
               <div class="circle-container">
                 <img :src="require(`@/assets/${dog.photo}`)" alt="Allevamento Labrador di razza Piemonte Valle d'Aosta" class="rounded-circle" />
@@ -64,7 +64,10 @@ export default {
       ],
     };
   },
+  
 };
+
+
 </script>
 
 <style scoped>

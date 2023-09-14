@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="pensione-image">
-        <img src="@/assets/struttura.jpg" alt="Pensione per cani" />
+        <img src="@/assets/struttura.jpg" alt="Pensione per cani Piemonte Valle d'aosta asilo diurno reost per cani" />
       </div>
     </div>
     
@@ -31,7 +31,7 @@
         Questa cornice idilliaca è perfetta per lunghe passeggiate e giochi all'aperto,
         offrendo ai nostri ospiti la possibilità di vivere esperienze uniche a stretto contatto con la natura.
       </p>
-      <img src="@/assets/Maps.png"  alt="Pensione per cani" />
+      <img src="@/assets/Maps.png"  alt="Pensione per cani posizione mappe Settimo Vittone Torino Milano Aosta" />
       <p>
         Inoltre, pur essendo immersi nella tranquillità della campagna,
         siamo comodamente vicini ai centri abitati, per garantire una facile accessibilità.
@@ -45,7 +45,7 @@
         ospitiamo esclusivamente cani in regola col percorso vaccinale e trattati con antiparassitari.
         La sicurezza e il comfort dei nostri amici a quattro zampe sono la nostra massima priorità.
       </p>
-      <img src="@/assets/SanBernardo.jpg" alt="Amici">
+      <img src="@/assets/SanBernardo.jpg" alt="Cane in pensione canina San Bernardo Allevamento">
     </div>
 
   <div class="accordion accordion-flush" id="accordionFlushExample">
