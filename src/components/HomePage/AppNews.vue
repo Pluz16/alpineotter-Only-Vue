@@ -1,25 +1,28 @@
 <template >
     <div class="news">
         <br>
-    <h3>Ultimi 2 cuccioli disponibili!</h3>
+    <h2>Foto dell'ultima cucciolata di Labrador Gialli</h2>
     <div>
-        <p>Sono disponibili gli ultimi cuccioli di Labrador Retriever di altissima genealogia! Sono nati il 18 Luglio 2023 ed è una cucciolata di 6 labrador beige.</p>
+        <p>Ricordiamo che il nostro allevamento vuole mantenere il massimo standard possibile in ottica di certificazioni e genealogia della razza. </p>
     </div>
     <section class="info-section">
     <div class="info-content">
-      <router-link to="/contattaci" class="info-button">Contattaci!</router-link>
+      <router-link to="/contattaci" class="info-button">Riserva i prossimi!</router-link>
     </div>
   </section>
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="@/assets/copertina-cucciolata.jpg" class="d-block w-100" alt="Cucciolata Labrador Retrievers Gialli Allevamento Alpine Otter e Allevamento del Re di Pietra">
+      <img src="@/assets/PUPPY-4.jpg" class="d-block w-100" alt="Cucciolata Labrador Retrievers Gialli Allevamento Alpine Otter e Allevamento del Re di Pietra">
     </div>
     <div class="carousel-item">
-      <img src="@/assets/PUPPY-1.jpg" class="d-block w-100" alt="Cucciolo Labrador Beige ">
+      <img src="@/assets/PUPPY-1.jpg" class="d-block w-100" alt="Cucciolo Labrador Retriever Beige ">
     </div>
     <div class="carousel-item">
-      <img src="@/assets/PUPPY-3.jpg" class="d-block w-100" alt="Cucciolo Labrador Miele">
+      <img src="@/assets/PUPPY-3.jpg" class="d-block w-100" alt="Cucciolo Labrador Retriever Miele">
+    </div>
+    <div class="carousel-item">
+      <img src="@/assets/PUPPY-2.jpg" class="d-block w-100" alt="Cucciolo Labrador Retriever Giallo">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -47,8 +50,13 @@
     text-align: center;
 }
 
-h3{
-    background-color: antiquewhite;
+.carousel-item img{
+  border-radius: 10px;
+}
+
+h2{
+    text-decoration: dashed;
+    font-size: 22px;
 }
 .slide{
     max-width: 300px;
@@ -57,9 +65,9 @@ h3{
 
 
     .info-button {
-  font-size: 20px;
-  padding: 15px 40px;
-  background-color: #007bff;
+  font-size: 16px;
+  padding: 15px 30px;
+  background-color: #81a5eb;
   color: #fff;
   border: none;
   border-radius: 10px;

@@ -1,6 +1,6 @@
 <template>
     <div class="paradise-container">
-      <h4 class="paradise-title">Allevamento Labrador Retrievers e Pensione per cani</h4>
+      <h2 class="paradise-title">Allevamento Labrador Retrievers e Pensione per cani</h2>
       <p></p>
     </div>
   </template>
@@ -14,7 +14,7 @@
   }
   
   .paradise-title {
-    font-size: 28px;
+    /* font-size: 28px; */
     color: #333;
   }
   </style>

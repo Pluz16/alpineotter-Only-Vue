@@ -29,8 +29,8 @@
       <router-link to="/privacy" class="router-link">Privacy</router-link>
     </div>
     <div class="footer-right">
-      <img src="../assets/enci.png" alt="ENCI" class="sponsor-image" />
-      <img src="../assets/fci.png" alt="FCI" class="sponsor-image" />
+      <a href="https://www.enci.it/"><img src="../assets/enci.png" alt="ENCI" class="sponsor-image" /></a>
+      <a href="https://www.fci.be/en/"><img src="../assets/fci.png" alt="FCI" class="sponsor-image" /></a>
     </div>
   </footer>
 </template>

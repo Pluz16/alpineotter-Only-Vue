@@ -2,7 +2,9 @@
     <div class="home-page">
       <FirstHero />
       <AppParadise />
+      <hr>
       <AppNews/>
+      <hr>
       <!-- <AppOwns /> -->
       <AppReception />
       <AppEtica />
