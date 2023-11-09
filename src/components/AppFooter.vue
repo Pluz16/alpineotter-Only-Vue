@@ -1,5 +1,12 @@
 <template>
   <footer class="app-footer">
+    <div
+    data-pp-message
+    data-pp-style-layout="text"
+    data-pp-style-logo-type="inline"
+    data-pp-style-text-color="black"
+    data-pp-amount="1500,00">
+</div>
     <div class="footer-left">
       <div class="useful-section">
         <div class="section-title">Sezioni utili</div>

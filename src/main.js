@@ -8,6 +8,8 @@ import '@/global.css';
 import { createHead } from '@vueuse/head';
 const head = createHead()
 
+window.dataLayer = window.dataLayer || [];
+
 createApp(App)
   .use(head)
   .use(router)
