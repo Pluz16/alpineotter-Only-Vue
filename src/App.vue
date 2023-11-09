@@ -48,6 +48,24 @@ export default {
     script.type = 'application/ld+json';
     script.text = JSON.stringify(logoSchema);
     document.head.appendChild(script);
+
+    const googleAdsScript = document.createElement('script');
+    googleAdsScript.async = true;
+    googleAdsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Z52KS9L4F3";
+
+    googleAdsScript.onload = function () {
+      // Inizializza il codice di Google Ads quando il caricamento dello script è completo
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-Z52KS9L4F3');
+    };
+
+    // Aggiungi lo script al documento
+    document.head.appendChild(googleAdsScript);
+
   },
 };
 </script>
