@@ -1,7 +1,7 @@
 <template>
   <header class="app-header">
     <div class="logo" @click="goToHomePage">
-      <a href="/"><img src="@/assets/logodef.jpg" alt="Allevamento Alpine otter e Pensione per cani Megan & co" /></a>
+      <a href="/"><img src="@/assets/logo.jpg" alt="Allevamento Alpine otter e Pensione per cani Megan & co" /></a>
     </div>
     <div class="brand">
       <h1>Megan &amp; Co.</h1>
