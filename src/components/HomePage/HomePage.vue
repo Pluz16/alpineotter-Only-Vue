@@ -10,6 +10,7 @@
       <AppEtica />
       <AppSlider />
       <AppLab/>
+      <AppTalks/>
       <!-- Aggiungi altri componenti della homepage -->
     </div>
   </template>
@@ -19,6 +20,7 @@
   import AppParadise from '@/components/HomePage/AppParadise';
   import AppNews from '@/components/HomePage/AppNews.vue';
   // import AppOwns from '@/components/HomePage/AppOwns.vue';
+  import AppTalks from '@/components/HomePage/AppTalks.vue';
   import AppReception from '@/components/HomePage/AppReception.vue';
   import AppEtica from '@/components/HomePage/AppEtica.vue';
   import AppSlider from '@/components/HomePage/AppSlider.vue';
@@ -36,6 +38,7 @@
       AppSlider,
       AppEtica,
       AppLab,
+      AppTalks,
       // Aggiungi altri componenti della homepage
     },
   };

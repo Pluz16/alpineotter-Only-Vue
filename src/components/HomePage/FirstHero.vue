@@ -4,7 +4,7 @@
     <div class="content">
       <div class="text">
         <div class="left" @click="goToAllevamento">
-          <a href="/allevamento#top"><h2>ALLEVAMENTO LABRADOR RETIREVERS</h2></a>
+          <a href="/allevamento#top"><h2>ALLEVAMENTO LABRADOR RETRIEVER</h2></a>
         </div>
         <div class="right" @click="goToPensione">
           <a href="/pensione#top"><h2>PENSIONE PER CANI</h2></a>
