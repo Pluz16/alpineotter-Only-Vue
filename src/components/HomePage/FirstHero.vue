@@ -4,7 +4,7 @@
     <div class="content">
       <div class="text">
         <div class="left" @click="goToAllevamento">
-          <a href="/allevamento#top"><h2>ALLEVAMENTO LABRADOR RETRIEVER</h2></a>
+          <a href="/allevamento#top"><h2>ALLEVAMENTO LABRADOR</h2></a>
         </div>
         <div class="right" @click="goToPensione">
           <a href="/pensione#top"><h2>PENSIONE PER CANI</h2></a>
@@ -31,9 +31,10 @@ export default {
 <style scoped>
 .first-hero {
   position: relative;
-  height: 400px;
+  min-height: 150px;
   max-width: 100%;
-  margin: 0 auto; /* Aggiunto per centrare il contenuto */
+  margin: 0 auto;
+  overflow: hidden; /* Aggiunta per gestire l'overflow dell'immagine */
 }
 
 .background-image {
@@ -59,37 +60,40 @@ export default {
 
 .text {
   display: flex;
+  flex-direction: column; /* Modificato da row a column per una migliore impilamento su dispositivi mobili */
   justify-content: center;
   align-items: center;
   color: white;
   margin-top: 20px;
   font-weight: 800;
-  padding: 0 10px; /* Aggiungi questa riga */
+  padding: 0 10px;
+  width: 100%;
 }
 
 .left,
 .right {
   cursor: pointer;
   padding: 10px 20px;
-  /* max-width: 360px; */
+  width: 48%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px; /* Aggiunta spaziatura tra i pulsanti */
 }
 
 .left {
-  border-radius: 75px;
+  /* border-radius: 75px; */
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #f0a6a6;
+  background-color: #f0a6a64f;
 }
 
 .right {
-  border-radius: 75px;
+  /* border-radius: 75px; */
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  background-color: #81a5eb;
+  background-color: #81a4eb6f;
 }
 
 .left:hover,
@@ -97,25 +101,38 @@ export default {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.left:hover h2,
+.right:hover h2 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.699);
+}
+
 .left h2,
 .right h2 {
   font-size: 24px;
   text-align: center;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.983);
 }
 
 @media (max-width: 767px) {
   .left,
   .right {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
-
-  .right{
-    margin-right: 10px;
+  .left,
+  .right {
+    margin-top: 10px; /* Aggiunta spaziatura tra i pulsanti su dispositivi mobili */
   }
 
-  .left{
-    margin-left: 10px;
+  .right {
+    margin-right: 0;
+  }
+
+  .left {
+    margin-left: 0;
   }
 
   .left,
@@ -127,7 +144,7 @@ export default {
 }
 
 .left a,
-.right a{
+.right a {
   color: aliceblue;
 }
 </style>
