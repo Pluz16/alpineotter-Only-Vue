@@ -33,6 +33,12 @@ export default {
           title: "Voglio comprare un cane di razza. Come scegliere l’allevatore?",
           url: "https://www.dogsportal.it/voglio-comprare-un-cane-di-razza-come-scegliere-lallevatore/",
           imageUrl: "cropped-logo-new-dogsportal.png"
+        },
+        {
+          id: 3,
+          title: "Il Labrador Retriever nell’immaginario collettivo tra cinema e tv",
+          url: "https://www.dogsportal.it/il-labrador-retriever-nellimmaginario-collettivo-tra-cinema-e-tv/",
+          imageUrl: "cropped-logo-new-dogsportal.png"
         }
         // ... altri articoli
       ]
