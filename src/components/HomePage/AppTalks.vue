@@ -23,15 +23,9 @@ export default {
     return {
       articles: [
         {
-          id: 4,
-          title: "La tutela delle razze canine ai tempi del covid-2019",
-          url: "https://www.dogsportal.it/la-tutela-delle-razze-cinofile-ai-tempi-del-covid-2019/",
-          imageUrl: "cropped-logo-new-dogsportal.png"
-        },
-        {
-          id: 3,
-          title: "Voglio comprare un cane di razza. Come scegliere l’allevatore?",
-          url: "https://www.dogsportal.it/voglio-comprare-un-cane-di-razza-come-scegliere-lallevatore/",
+          id: 1,
+          title: "Leggenda narra che il Labrador nasca dall’incontro tra un cane ed una lontra",
+          url: "https://dogsportal.it/leggenda-narra-che-il-labrador-nasca-dallincontro-tra-un-cane-ed-una-lontra/",
           imageUrl: "cropped-logo-new-dogsportal.png"
         },
         {
@@ -41,12 +35,17 @@ export default {
           imageUrl: "cropped-logo-new-dogsportal.png"
         },
         {
-          id: 1,
-          title: "Leggenda narra che il Labrador nasca dall’incontro tra un cane ed una lontra",
-          url: "https://dogsportal.it/leggenda-narra-che-il-labrador-nasca-dallincontro-tra-un-cane-ed-una-lontra/",
+          id: 3,
+          title: "Voglio comprare un cane di razza. Come scegliere l’allevatore?",
+          url: "https://www.dogsportal.it/voglio-comprare-un-cane-di-razza-come-scegliere-lallevatore/",
           imageUrl: "cropped-logo-new-dogsportal.png"
-        }
-        // ... altri articoli
+        },
+        {
+          id: 4,
+          title: "La tutela delle razze canine ai tempi del covid-2019",
+          url: "https://www.dogsportal.it/la-tutela-delle-razze-cinofile-ai-tempi-del-covid-2019/",
+          imageUrl: "cropped-logo-new-dogsportal.png"
+        }// ... altri articoli
       ]
     };
   },
