@@ -45,8 +45,6 @@
   </script>
   
   <style scoped>
-  /* .home-page {
-    /* Stili per la homepage */
-  /* } */
+ 
   </style>
   

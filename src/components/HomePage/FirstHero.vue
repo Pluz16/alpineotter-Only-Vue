@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .first-hero {
   position: relative;
   min-height: 150px;
@@ -56,15 +56,15 @@ export default {
   height: 100%;
   z-index: 1;
   max-width: 100%;
+  padding-bottom: 20px; /* Spaziatura aggiuntiva sotto i pulsanti */
 }
 
 .text {
   display: flex;
-  flex-direction: column; /* Modificato da row a column per una migliore impilamento su dispositivi mobili */
+  flex-direction: column; /* Mantieni colonna per una migliore impilamento su dispositivi mobili */
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 20px;
   font-weight: 800;
   padding: 0 10px;
   width: 100%;
@@ -80,17 +80,16 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 10px; /* Aggiunta spaziatura tra i pulsanti */
+  margin-bottom: 20px; /* Aggiunta margine inferiore per distanziare dal bordo del container */
 }
 
 .left {
-  /* border-radius: 75px; */
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   background-color: #f0a6a64f;
 }
 
 .right {
-  /* border-radius: 75px; */
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   background-color: #81a4eb6f;
@@ -120,23 +119,9 @@ export default {
   .right {
     width: 100%;
     margin-bottom: 10px;
-  }
-
-  .left,
-  .right {
     margin-top: 10px; /* Aggiunta spaziatura tra i pulsanti su dispositivi mobili */
   }
 
-  .right {
-    margin-right: 0;
-  }
-
-  .left {
-    margin-left: 0;
-  }
-
-  .left,
-  .right,
   .left h2,
   .right h2 {
     font-size: 1rem;
@@ -147,4 +132,5 @@ export default {
 .right a {
   color: aliceblue;
 }
+
 </style>

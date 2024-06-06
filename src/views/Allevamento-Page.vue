@@ -175,9 +175,12 @@
           </p>
         </div>
         <div class="dog-item">
-          <img src="@/assets/webbina.jpg" alt="MARGE BOUVIER ALPINE OTTER femmina Labrador Miele con pedigree testato patologie genetiche">
+          <img src="@/assets/Marge_breed.jpg" alt="MARGE BOUVIER ALPINE OTTER femmina Labrador Miele con pedigree testato patologie genetiche">
           <h3>MARGE BOUVIER ALPINE OTTER - LO22200609</h3>
-          <p>Test da effettuare al raggiungimento dell'età necessaria per sottoporsi all'analisi</p>
+          <p>DisplasiaAnche e Gomiti: A/BL
+            Testato LABOKLIN per 7 patologie
+            DNA depositato
+          </p>
         </div>
         <div class="dog-item">
           <img src="@/assets/Ulisse3.jpg" alt="ULISSE maschio Labrador Chocolate marrone con Pedigree stallone">
