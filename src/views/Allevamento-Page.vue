@@ -177,7 +177,7 @@
         <div class="dog-item">
           <img src="@/assets/Marge_breed.jpg" alt="MARGE BOUVIER ALPINE OTTER femmina Labrador Miele con pedigree testato patologie genetiche">
           <h3>MARGE BOUVIER ALPINE OTTER - LO22200609</h3>
-          <p>DisplasiaAnche e Gomiti: A/BL
+          <p>Displasia Anche e Gomiti: A/BL
             Testato LABOKLIN per 7 patologie
             DNA depositato
           </p>
